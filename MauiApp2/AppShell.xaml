@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Shell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:MauiApp2"
+       x:Class="MauiApp2.AppShell" FlyoutBackgroundColor="#cfcfcf">
+
+    <!--<Shell.FlyoutBackground>
+        <LinearGradientBrush StartPoint="0,0"
+                             EndPoint="1,1">
+            <GradientStop Color="Navy"
+                          Offset="0.1" />
+            <GradientStop Color="MidnightBlue"
+                          Offset="0.6" />
+            <GradientStop Color="DarkBlue"
+                          Offset="1.0" />
+        </LinearGradientBrush>
+    </Shell.FlyoutBackground>-->
+
+    <!-- Flyout Menu Items -->
+    <FlyoutItem Title="Home" Icon="home.png">
+        <ShellContent ContentTemplate="{DataTemplate local:HomePage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="MAUI" Icon="home.png">
+        <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Settings" Icon="settings.png">
+        <ShellContent ContentTemplate="{DataTemplate local:SettingPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Login" Icon="settings.png">
+        <ShellContent ContentTemplate="{DataTemplate local:SettingPage}" />
+    </FlyoutItem>
+
+</Shell>
